@@ -1,0 +1,33 @@
+{
+  "name": "generator-cli",
+  "version": "1.0.0",
+  "description": "Generator for cli.",
+  "homepage": "https://github.com/afeiship/generator-cli",
+  "author": {
+    "name": "afeiship",
+    "email": "1290657123@qq.com",
+    "url": "https://github.com/afeiship"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yo",
+    "cli",
+    "yeoman-generator"
+  ],
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "@feizheng/yeoman-generator-helper": "^1.0.1",
+    "chalk": "^2.1.0",
+    "replace-in-file": "^5.0.2",
+    "yeoman-generator": "^2.0.1",
+    "yeoman-remote": "^1.0.1",
+    "yosay": "^2.0.1"
+  },
+  "repository": "git@github.com:afeiship/generator-cli.git",
+  "license": "MIT"
+}
