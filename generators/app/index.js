@@ -11,13 +11,7 @@ const replace = require('replace-in-file');
 module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
-    this.log(
-      yosay(
-        `Welcome to the stunning ${chalk.red(
-          'generator-cli'
-        )} generator!`
-      )
-    );
+    this.log(yosay(`Welcome to the stunning ${chalk.red('generator-cli')} generator!`));
 
     const prompts = [
       {
@@ -29,12 +23,13 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'description',
-        message: 'Your description?'
+        message: 'Your description?',
+        validate: Boolean
       }
     ];
 
     return this.prompt(prompts).then(
-      function(props) {
+      function (props) {
         // To access props later use this.props.someAnswer;
         this.props = props;
         yoHelper.rewriteProps(props);
@@ -47,12 +42,9 @@ module.exports = class extends Generator {
     remote(
       'afeiship',
       'boilerplate-cli',
-      function(err, cachePath) {
+      function (err, cachePath) {
         // copy files:
-        this.fs.copy(
-          glob.sync(resolve(cachePath, '{**,.*}')),
-          this.destinationPath()
-        );
+        this.fs.copy(glob.sync(resolve(cachePath, '{**,.*}')), this.destinationPath());
         done();
       }.bind(this)
     );
@@ -64,10 +56,7 @@ module.exports = class extends Generator {
 
     replace.sync({
       files,
-      from: [
-        /boilerplate-cli-description/g,
-        /boilerplate-cli/g
-      ],
+      from: [/boilerplate-cli-description/g, /boilerplate-cli/g],
       to: [description, project_name]
     });
   }
