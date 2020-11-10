@@ -1,5 +1,5 @@
 {
-  "name": "@feizheng/generator-cli",
+  "name": "@jswork/generator-cli",
   "version": "1.0.0",
   "description": "Generator for cli.",
   "homepage": "https://github.com/afeiship/generator-cli",
