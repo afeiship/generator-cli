@@ -7,6 +7,7 @@ const { resolve } = require('path');
 const remote = require('yeoman-remote');
 const yoHelper = require('@jswork/yeoman-generator-helper');
 const replace = require('replace-in-file');
+const prompts = require('./prompts');
 
 module.exports = class extends Generator {
   prompting() {
