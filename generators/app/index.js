@@ -4,7 +4,6 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const glob = require('glob');
 const { resolve } = require('path');
-const remote = require('yeoman-remote');
 const yoHelper = require('@jswork/yeoman-generator-helper');
 const replace = require('replace-in-file');
 const prompts = require('./prompts');
@@ -19,11 +18,11 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const done = this.async();
-    remote('afeiship', 'boilerplate-cli', (err, cachePath) => {
-      this.fs.copyTpl(glob.sync(resolve(cachePath, '{**,.*}')), this.destinationPath(), this.props);
-      done();
-    });
+    this.fs.copyTpl(
+      globby.sync(this.templatePath('**'), { dot: true }),
+      this.destinationPath(),
+      this.props
+    );
   }
 
   end() {
