@@ -3,11 +3,12 @@
 
 ## installation
 ```shell
-git clone git@github.com:alo7i/report-cli.git
+git clone git@github.com:afeiship/generator-cli.git
 npm link
 ```
 
 ## usage
 ```shell
 yo @jswork/cli
+yo @jswork/cli:simple
 ```
