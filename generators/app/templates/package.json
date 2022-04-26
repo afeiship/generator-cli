@@ -2,7 +2,6 @@
   "name": "@<%= scope %>/<%= project_name %>",
   "version": "1.0.0",
   "description": "<%= description %>",
-  "author": "<%= git.email %>",
   "bin": {
     "<%= project_name %>": "./bin/run"
   },
@@ -64,7 +63,7 @@
   ],
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "<%= registry.access %>",
+    "registry": "<%= registry.publish %>"
   }
 }

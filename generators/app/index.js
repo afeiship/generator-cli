@@ -3,6 +3,7 @@ const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
 const glob = require('glob');
+const globby = require('globby');
 const { resolve } = require('path');
 const yoHelper = require('@jswork/yeoman-generator-helper');
 const replace = require('replace-in-file');

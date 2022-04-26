@@ -9,6 +9,8 @@ npm link
 
 ## usage
 ```shell
+# oclif@2
 yo @jswork/cli
-yo @jswork/cli:simple
+# cli based on nx
+yo @jswork/cli:nx
 ```
