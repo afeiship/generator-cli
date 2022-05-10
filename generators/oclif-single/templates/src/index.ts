@@ -16,7 +16,7 @@ class <%- ctx.classify(project_name) %> extends Command {
   static args = [{ name: 'file' }];
 
   async run() {
-    const { args, flags } = this.parse(TestCli);
+    const { args, flags } = this.parse(<%- ctx.classify(project_name) %>);
 
     const name = flags.name ?? 'world';
     this.log(`hello ${name} from ./src/index.ts`);
