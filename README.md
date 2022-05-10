@@ -11,6 +11,8 @@ npm link
 ```shell
 # oclif@2
 yo @jswork/cli
+
 # cli based on nx
 yo @jswork/cli:nx
+yo @jswork/cli:oclif-single
 ```
