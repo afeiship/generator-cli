@@ -10,6 +10,10 @@
 
 ## installation
 ```shell
+# public
+npm i -g @boilerplate-scope/boilerplate-cli
+
+# private
 git clone https://github.com/afeiship/boilerplate-cli.git
 cd boilerplate-cli
 npm i && npm link

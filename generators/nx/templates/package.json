@@ -28,9 +28,6 @@
     "yargs": "^13.2.4"
   },
   "devDependencies": {
-    "@jswork/next": "^1.0.5",
-    "@jswork/next-absolute-package": "^1.0.1",
-    "@jswork/next-get-key": "^1.0.0",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-load-plugins": "^2.0.5",
