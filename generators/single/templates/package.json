@@ -1,20 +1,16 @@
 {
-  "name": "@<%= scope %>/<%= description %>",
+  "name": "@<%= scope %>/<%= project_name %>",
   "version": "1.0.0",
   "description": "<%= description %>",
   "bin": {
-    "boilerplate-cli": "bin/run"
+    "<%= project_name %>": "./bin/run"
   },
   "scripts": {
-    "build": "gulp",
     "release": "release-it"
   },
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@jswork/next": "^1.0.5",
-    "@jswork/next-absolute-package": "^1.0.1",
-    "@jswork/next-get-key": "^1.0.0",
     "globby": "^11.1.0",
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
