@@ -7,7 +7,8 @@ const globby = require('globby');
 const { resolve } = require('path');
 const yoHelper = require('@jswork/yeoman-generator-helper');
 const replace = require('replace-in-file');
-const prompts = require('./prompts');
+const getp = require('@jswork/generator-prompts');
+const prompts = getp(['scope', 'registry', 'project_name', 'description']);
 
 module.exports = class extends Generator {
   prompting() {

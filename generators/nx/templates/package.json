@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "gulp",
+    "prerelease": "npm run build",
     "release": "release-it"
   },
   "main": "index.js",
@@ -31,13 +32,13 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-load-plugins": "^2.0.5",
-    "gulp-replace": "^1.0.0",
-    "prettier": "^2.1.2",
-    "release-it": "^14.14.3"
+    "gulp-replace": "^1.0.0"
   },
   "keywords": [
     "boilerplate",
-    "cli"
+    "cli",
+    "next",
+    "nx"
   ],
   "repository": {
     "type": "git",
