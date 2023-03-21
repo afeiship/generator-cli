@@ -23,7 +23,7 @@
   "dependencies": {
     "@jswork/generator-prompts": "^1.1.6",
     "@jswork/next-registry-choices": "^1.0.1",
-    "@jswork/yeoman-generator": "^1.0.4",
+    "@jswork/yeoman-generator": "^1.0.6",
     "@jswork/yeoman-generator-helper": "^1.0.3",
     "chalk": "^4.1.0",
     "globby": "^11.1.0",
