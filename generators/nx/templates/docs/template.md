@@ -1,5 +1,5 @@
-# boilerplate-cli
-> boilerplate-cli-description
+# <%= project_name %>
+> <%= description %>
 
 [![version][version-image]][version-url]
 [![license][license-image]][license-url]
@@ -11,30 +11,36 @@
 ## installation
 ```shell
 # public
-npm i -g @boilerplate-scope/boilerplate-cli
+npm i -g @<%= scope %>/<%= project_name %>
 
 # private
-git clone https://github.com/afeiship/boilerplate-cli.git
-cd boilerplate-cli
+git clone https://github.com/afeiship/<%= project_name %>.git
+cd <%= project_name %>
 npm i && npm link
 ```
 
 ## usage
 ~~~
-__USAGE__
+Usage: <%= project_name %> [options]
+
+Options:
+  -V, --version       output the version number
+  -d, --debug         only show cmds, but not clean.
+  -s, --src <string>  source filepath. (default: "./src")
+  -h, --help          display help for command
 ~~~
 
 ## license
-Code released under [the MIT license](https://github.com/afeiship/boilerplate-cli/blob/master/LICENSE.txt).
+Code released under [the MIT license](https://github.com/afeiship/<%= project_name %>/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@boilerplate-scope/boilerplate-cli
-[version-url]: https://npmjs.org/package/@boilerplate-scope/boilerplate-cli
+[version-image]: https://img.shields.io/npm/v/@<%= scope %>/<%= project_name %>
+[version-url]: https://npmjs.org/package/@<%= scope %>/<%= project_name %>
 
-[license-image]: https://img.shields.io/npm/l/@boilerplate-scope/boilerplate-cli
-[license-url]: https://github.com/afeiship/boilerplate-cli/blob/master/LICENSE.txt
+[license-image]: https://img.shields.io/npm/l/@<%= scope %>/<%= project_name %>
+[license-url]: https://github.com/afeiship/<%= project_name %>/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@boilerplate-scope/boilerplate-cli
-[size-url]: https://github.com/afeiship/boilerplate-cli/blob/master/dist/boilerplate-cli.min.js
+[size-image]: https://img.shields.io/bundlephobia/minzip/@<%= scope %>/<%= project_name %>
+[size-url]: https://github.com/afeiship/<%= project_name %>/blob/master/dist/<%= project_name %>.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@boilerplate-scope/boilerplate-cli
-[download-url]: https://www.npmjs.com/package/@boilerplate-scope/boilerplate-cli
+[download-image]: https://img.shields.io/npm/dm/@<%= scope %>/<%= project_name %>
+[download-url]: https://www.npmjs.com/package/@<%= scope %>/<%= project_name %>
