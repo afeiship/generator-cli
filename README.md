@@ -13,6 +13,7 @@ npm link
 # oclif-single: based on oclif v1
 # oclif-multi: based on oclif v2
 yo @jswork/cli:nx
+yo @jswork/cli:single
 yo @jswork/cli:oclif-multi
 yo @jswork/cli:oclif-single
 ```
