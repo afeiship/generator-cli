@@ -11,10 +11,11 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "globby": "^11.1.0",
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
-    "yargs": "^13.2.4"
+    "yargs": "^13.2.4",
+    "esm": "^3.2.25",
+    "globby": "^11.1.0"
   },
   "devDependencies": {
     "del": "^6.0.0",
