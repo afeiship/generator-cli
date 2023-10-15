@@ -1,17 +1,24 @@
-(function () {
-  'use strict';
+'use strict';
 
-  const gulp = require('gulp');
-  const fs = require('fs');
+const gulp = require('gulp');
+const usage = exec(`${cmd} -h`).toString().trim();
 
-  require("@jswork/next");
-  require('@jswork/next-absolute-package');
-  require('@jswork/next-get-key');
+require('@jswork/next');
+require('@jswork/next-absolute-package');
+require('@jswork/next-get-key');
 
-  //import
-  fs.readdirSync('./build').map(function (file) {
-    require('./build/' + file);
-  });
+gulp.task('docs', function () {
+  return gulp
+    .src('docs/template.md')
+    .pipe($.replace('__USAGE__', usage))
+    .pipe(
+      $.rename(function (path) {
+        path.dirname = '..';
+        path.basename = 'README';
+        return path;
+      })
+    )
+    .pipe(gulp.dest('dist'));
+});
 
-  gulp.task('default', gulp.series(['clean', 'docs']));
-})();
+gulp.task('default', gulp.series(['clean', 'docs']));

@@ -3,9 +3,8 @@
     "requireCleanWorkingDir": false
   },
   "hooks": {
-    "after:init": [
-      "t2k"
-    ]
+    "before:init": ["npm run docs"],
+    "after:init": ["t2k"]
   },
   "github": {
     "release": true,
