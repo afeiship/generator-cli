@@ -7,8 +7,7 @@
     "<%= project_name %>": "bin/index.js"
   },
   "scripts": {
-    "build": "gulp",
-    "prerelease": "npm run build",
+    "docs": "gulp",
     "release": "release-it"
   },
   "main": "index.js",
